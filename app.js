@@ -2,7 +2,8 @@ const express = require("express");
 const morgan = require("morgan");
 const cors = require ("cors")
 
-const router = require("./routes/routes.js")
+const resourcesRouter = require("./routes/routes.js")
+const notesRouter = require("./routes/notesRoutes.js")
 
 
 const app = express();
@@ -13,7 +14,8 @@ app.use(morgan("dev"));
 //app.use(express.static("public"));
 app.use(express.json());
 
-app.use("/api/resources", router); // Needs changing to new url
+app.use("/api/resources", resourcesRouter); // Needs changing to new url
+app.use("/api/notes", notesRouter);
 
 
 app.listen(PORT, function () {
