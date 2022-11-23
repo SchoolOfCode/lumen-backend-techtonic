@@ -1,8 +1,8 @@
 const express = require("express");
-const morgan = require("morgan");
+//const morgan = require("morgan");
 const cors = require ("cors")
 
-const resourcesRouter = require("./routes/routes.js")
+const resourcesRouter = require("./routes/resourceRoutes.js")
 const notesRouter = require("./routes/notesRoutes.js")
 
 
@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(cors())
-app.use(morgan("dev"));
+//app.use(morgan("dev"));
 //app.use(express.static("public"));
 app.use(express.json());
 
