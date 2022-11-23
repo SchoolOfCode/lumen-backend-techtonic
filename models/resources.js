@@ -25,3 +25,9 @@ async function addNote(note) {
   );
   return note;
 }
+
+module.exports = {
+  getResourcesAndNotes,
+  addNote,
+  addResource,
+};
