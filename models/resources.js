@@ -3,7 +3,7 @@ const { query } = require("../db/index.js");
 async function getResources() {
   //query database and return all resource columns as well as notes in notes table
   const result = await query(
-    "SELECT DISTINCT * FROM main_resources INNER JOIN category ON category.id = main_resources.category_id ORDER BY date DESC"
+    "SELECT DISTINCT r.*, c.category FROM main_resources r INNER JOIN category c ON c.id = r.category_id ORDER BY date DESC"
   );
   const resources = result.rows;
   return resources;
