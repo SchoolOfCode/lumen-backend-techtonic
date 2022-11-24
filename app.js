@@ -12,7 +12,7 @@ app.use(cors());
 //app.use(express.static("public"));
 app.use(express.json());
 
-app.use("/api/resources", resourcesRouter); // Needs changing to new url
+app.use("/api/v2/resources", resourcesRouter); // v2 added
 
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
