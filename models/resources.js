@@ -1,7 +1,9 @@
-const { query } = require("../db/index.js");
+import { query } from "../db/index.js";
 
-async function getResources() {
-  //query database and return all resource columns as well as notes in notes table
+// Exporting both async functions 
+// This function is making a GET request.
+
+export async function getResources() {
   const result = await query(
     "SELECT DISTINCT r.*, c.category FROM main_resources r INNER JOIN category c ON c.id = r.category_id ORDER BY date DESC"
   );
@@ -9,7 +11,8 @@ async function getResources() {
   return resources;
 }
 
-async function addResource(resource) {
+// This function is making a POST request.
+export async function addResource(resource) {
   await query(
     "INSERT INTO main_resources (title, url, language, category_id, submission_notes) VALUES ($1, $2, $3, $4, $5)",
     [
@@ -23,7 +26,3 @@ async function addResource(resource) {
   return resource;
 }
 
-module.exports = {
-  getResources,
-  addResource,
-};

@@ -25,6 +25,7 @@
   "bugs": {
     "url": "https://github.com/SchoolOfCode/bc13_w9_project-backend-techtonic_front/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/SchoolOfCode/bc13_w9_project-backend-techtonic_front#readme",
   "description": ""
 }
