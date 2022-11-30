@@ -13,6 +13,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node -r dotenv/config app.js",
+    "build": "next build",
     "dev": "nodemon -r dotenv/config app.js"
   },
   "repository": {
