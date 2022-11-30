@@ -3,9 +3,9 @@ name: CI
 
 on:
   push:
-    branches: [ "tuesday_refactoring" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "tuesday_refactoring" ]
+    branches: [ "main" ]
 
 jobs:
   build:
