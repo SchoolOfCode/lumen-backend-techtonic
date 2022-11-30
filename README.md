@@ -1,6 +1,8 @@
-Lumen,
-    Enlighten your learning
-                created by TechTonic
+
+![Logo](https://i.ibb.co/vLRR8cP/Lumen-logo.png)
+
+![Logo](https://i.ibb.co/SdN7rvV/TECHTONIC-logo.png)
+
 
 
 About the project:
