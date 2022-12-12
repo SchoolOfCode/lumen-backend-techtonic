@@ -1,8 +1,8 @@
-import {Router} from 'express';
-const router = Router();
+import { Router } from "express";
+const router = Router(); //create a new router object
 
 // Functions imported from models
-import { getResources, addResource } from "../models/resources.js"; 
+import { getResources, addResource } from "../models/resources.js";
 
 // GET request router
 router.get("/", async function (req, res) {
